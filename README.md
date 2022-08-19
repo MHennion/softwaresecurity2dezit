@@ -39,11 +39,12 @@ Legende van de flow chart
 # HSTS
 HTTP Strict Transport Security
 
-<img src="HSTS_Preload_List.png"/>
+De site staat nu in de HSTS Google Chrome preload list.
 
-De site staat nu in de HSTS Google Chrome preload list. 
+# API
+
+https://github.com/MHennion/softwaresecurity2dezitapi
 
 # Deployment
 Hosting van de externe API, database en webapplicatie gaat via https://www.heroku.com/ : https://softwaresecurity2dezit.herokuapp.com/
 
-API: https://github.com/MHennion/softwaresecurity2dezitapi
