@@ -33,7 +33,7 @@ class PCController extends Controller
             $body['GPU'] = $request->input('gpu');
             $body['KEY'] = "3163-a50e-9abc-49be-94c2-4e8a-e480-cbd9";
 
-            $response = Http::post(env('PYTHON_API').'predict', [
+            $response = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'predict', [
                 json_encode($body)
             ]);
 
