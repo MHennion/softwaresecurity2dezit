@@ -39,23 +39,23 @@ class PCController extends Controller
 
             $bodyFPS['Score'] = $response->body();
 
-            $csgo = Http::post(env('PYTHON_API').'csgo', [
+            $csgo = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'csgo', [
                 json_encode($bodyFPS)
             ]);
 
-            $overwatch = Http::post(env('PYTHON_API').'overwatch', [
+            $overwatch = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'overwatch', [
                 json_encode($bodyFPS)
             ]);
 
-            $pubg = Http::post(env('PYTHON_API').'pubg', [
+            $pubg = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'pubg', [
                 json_encode($bodyFPS)
             ]);
 
-            $fortnite = Http::post(env('PYTHON_API').'fortnite', [
+            $fortnite = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'fortnite', [
                 json_encode($bodyFPS)
             ]);
 
-            $gtav = Http::post(env('PYTHON_API').'gtav', [
+            $gtav = Http::withBasicAuth(env('API_WEBAPP_USERNAME'), env('API_WEBAPP_PASSWORD'))->post(env('PYTHON_API').'gtav', [
                 json_encode($bodyFPS)
             ]);
 
