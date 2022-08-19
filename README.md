@@ -46,6 +46,3 @@ De site staat nu in de HSTS Google Chrome preload list.
 # Deployment
 Hosting van de externe API, database en webapplicatie gaat via https://www.heroku.com/
 https://thedarksidesoftwaresecurity.ga/
-
-# Planning
-https://trello.com/b/TfkvJOT3
