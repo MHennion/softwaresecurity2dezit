@@ -3,7 +3,7 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    Header always set Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+    Header always set "Strict-Transport-Security: max-age=63072000; includeSubDomains; preload"
 
     RewriteEngine On
 
