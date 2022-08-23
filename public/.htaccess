@@ -3,7 +3,6 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    Header always set "Strict-Transport-Security: max-age=63072000; includeSubDomains; preload"
 
     RewriteEngine On
 
@@ -25,4 +24,6 @@
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+    Header always set "Strict-Transport-Security: max-age=63072000; includeSubDomains; preload"
+    
 </IfModule>
