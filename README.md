@@ -39,7 +39,7 @@ Legende van de flow chart
 # HSTS
 HTTP Strict Transport Security
 
-De site staat nu in de HSTS Google Chrome preload list.
+Zowel de website als de API staan in de HSTS Google Chrome preload list.
 
 # API
 
